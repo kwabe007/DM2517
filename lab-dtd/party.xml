@@ -30,9 +30,29 @@
     <firstname>Miranda</firstname>
     <lastname>Michanek</lastname>
   </toastmaster>
+  
   <toastmaster>
-
     <firstname>Johannes</firstname>
     <lastname>Linde</lastname>
   </toastmaster>
+
+  <menu>
+    <starter>
+      <food type="shellfish">Toast Skagen</food>
+      <drink type="beer">Carlsberg Hof</drink>
+    </starter>
+
+    <main_course>
+      <food type="meat">B&brkbar;uf Ni&ccedil;osie</food>
+      <drink type="red_wine">Castillo de Benizar</drink>
+    </main_course>
+
+    <dessert>
+      <food type="dairy">Vanilla icecream</food>
+      <drink type="coffee">Espresso</drink>
+      <drink type="cognac">Napoleon Cognac</drink>
+
+    </dessert>
+  </menu>
+
 </party>

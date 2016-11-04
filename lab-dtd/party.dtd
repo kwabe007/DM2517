@@ -1,7 +1,9 @@
 <!ENTITY Ouml "Ö">
 <!ENTITY ouml "ö">
+<!ENTITY ccedil "ç">
+<!ENTITY brkbar "¦">
 
-<!ELEMENT party (title, date, starttime, endtime?, arranger, location, price?, OSAdate?, description?, contact?, host*, toastmaster*)>
+<!ELEMENT party (title, date, starttime, endtime?, arranger, location, price?, OSAdate?, description?, contact?, host*, toastmaster*, menu?)>
 <!ELEMENT title (#PCDATA)>
 <!ELEMENT date (#PCDATA)>
 <!ELEMENT starttime (#PCDATA)>
@@ -9,7 +11,7 @@
 <!ELEMENT arranger (#PCDATA)>
 <!ELEMENT location (#PCDATA)>
 <!ELEMENT price (#PCDATA)>
-<!ATTLIST price unit CDATA "sek">
+<!ATTLIST price unit CDATA #IMPLIED>
 
 <!ELEMENT OSAdate (#PCDATA)>
 <!ELEMENT description (#PCDATA)>
@@ -21,13 +23,17 @@
 <!ELEMENT email (#PCDATA)>
 
 <!ELEMENT host (firstname, lastname)>
-
 <!ELEMENT toastmaster (firstname, lastname)>
 
+<!ELEMENT menu (starter?, main_course, dessert?)>
 
 
+<!ENTITY % meal "food*, drink*">
+<!ELEMENT starter (%meal;)>
+<!ELEMENT main_course (%meal;)>
+<!ELEMENT dessert (%meal;)>
 
-
-
-
-
+<!ELEMENT food (#PCDATA)>
+<!ATTLIST food type (shellfish|fish|meat|vegetarian|dairy|other) #IMPLIED>
+<!ELEMENT drink (#PCDATA)>
+<!ATTLIST drink type (beer|red_wine|white_wine|coffee|cognac|tea|punch|other) #IMPLIED>
