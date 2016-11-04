@@ -1,0 +1,33 @@
+<!ENTITY Ouml "Ö">
+<!ENTITY ouml "ö">
+
+<!ELEMENT party (title, date, starttime, endtime?, arranger, location, price?, OSAdate?, description?, contact?, host*, toastmaster*)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT starttime (#PCDATA)>
+<!ELEMENT endtime (#PCDATA)>
+<!ELEMENT arranger (#PCDATA)>
+<!ELEMENT location (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ATTLIST price unit CDATA "sek">
+
+<!ELEMENT OSAdate (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+
+<!ELEMENT contact (firstname, lastname, phone, email)>
+<!ELEMENT firstname (#PCDATA)>
+<!ELEMENT lastname (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+
+<!ELEMENT host (firstname, lastname)>
+
+<!ELEMENT toastmaster (firstname, lastname)>
+
+
+
+
+
+
+
+
